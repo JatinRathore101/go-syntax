@@ -27,6 +27,7 @@ func main() {
 	var c int64 = 9000000000
 
 	fmt.Println("\nIntegers:")
+	fmt.Printf("%T\n", a) // ************************************************************* Prints TYPE
 	fmt.Println("a =", a, "Type:", fmt.Sprintf("%T", a))
 	fmt.Println("b =", b, "Type:", fmt.Sprintf("%T", b))
 	fmt.Println("c =", c, "Type:", fmt.Sprintf("%T", c))
@@ -48,7 +49,8 @@ func main() {
 		3. BOOLEAN TYPE
 		-----------------------------------
 	*/
-	var isActive bool = true
+	var isActive bool
+	isActive = true
 
 	fmt.Println("\nBoolean:")
 	fmt.Println("isActive =", isActive, "Type:", fmt.Sprintf("%T", isActive))
@@ -81,7 +83,7 @@ func main() {
 		Dynamic size
 		-----------------------------------
 	*/
-	scores := []int{90, 85, 70}
+	scores := []int{90, 85, 70} // ****************************************** ALMOST SIMILAR TO ARRAY
 
 	fmt.Println("\nSlice:")
 	fmt.Println("scores =", scores)
